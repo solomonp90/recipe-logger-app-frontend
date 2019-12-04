@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>meal app</title>
+    <div style="text-align: left;"  class="create-meal-container container">
+      <form class="add-meal-form" style="" id="add-meal-form">
+        <h3>Add a new Meal</h3>
+
+        <input type="text" name="name" value="" placeholder="Enter a meal name" class="input-text">
+        <br>       
+        <input type="text" name="image" value="" placeholder="Enter a meal's image URL" class="input-text">
+        <br>
+        <input type="text" name="kind" value="" placeholder="Enter the kind of meal" class="input-text">
+        <br>
+        <input type="textarea" name="description" value="" placeholder="Enter a meal description" class="input-text">
+        <br>
+        <input type="submit" name="submit" value="Create a new meal" class="submit">
+      </form>
+    </div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Welcome to Meal log!</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <ul class="list-group" id="meal-list">
+            <!-- meals -->
+          </ul>
+        </div>
+
+        <div class="col-8" id="meal-card-container">
+          <div class="card mb-3" id="main-meal">
+
+            <img class="card-img-top" id="meal-image" alt="meal Image Goes Here" src="https://prodimage.images-bn.com/pimages/9781724459091_p0_v1_s550x406.jpg">
+            <div class="card-body" >
+              <h4 class="card-title" id="meal-name"></h4>
+              <p class="card-text" id="meal-kind"></p>
+              <p class="card-text" id="meal-description"></p>
+              <div class="container" id="form-container">
+                <!-- FORM GOES HERE -->
+              </div>
+
+
+            </div>
+            <h5 class="card-header" id="card-header-h5"></h5>
+            <ul class="list-group list-group-flush" id="recipes-list">
+              <!-- RECIPES GO HERE -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

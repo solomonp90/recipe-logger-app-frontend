@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html   lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>food app</title>
+
+
+    <div style="text-align: left;"  class="create-meal-container container">
+            <form class="add-meal-form" style="">
+              <h3>Add a new Meal</h3>
+      
+              <input type="text" name="name" value="" placeholder="Enter a meal name" class="input-text">
+              <br>
+              
+              <input type="text" name="image" value="" placeholder="Enter a meal's image URL" class="input-text">
+              <br>
+
+              <input type="text" name="kind" value="" placeholder="Enter the kind of meal" class="input-text">
+              <br>
+
+              <input type="textarea" name="description" value="" placeholder="Enter a meal description" class="input-text">
+              <br>
+              <input type="submit" name="submit" value="Create a new meal" class="submit">
+            </form>
+          </div>
+
+          
+         
+
+          <style>
+                img {
+                  max-height: 400px;
+                  max-width: 200px;
+                }
+                /* textarea {
+                  width: 100%;
+                } */
+              </style>
+
+    <script defer src="index.js"></script>
+  </head>
+  <body style='background-color:rgb(117, 117, 182);'>
+
+
+
+      <div class="container">
+        <h1 class="display-4">Welcome to Meal choice!</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <ul class="list-group" id="food-list">
+           
+          </ul>
+        </div>
+
+        <div class="col-8">
+          <div class="card mb-3" id="main-food">
+
+            <img  class="card-img-top" id="food-image" alt="food Image">
+            <div class="card-body">
+              <h4 class="card-title" id="food-name"></h4>
+              <p class="card-text" id="food-description"></p>
+
+
+              <div style="text-align: right;"  class="container edit-meal-container">
+                <form class="edit-meal-form" style="">
+                  <h3>edit this meal</h3>
+          
+                  <input type="text" name="name" value="" placeholder="Enter a meal name" class="input-text">
+                  <br>
+                  
+                  <input type="text" name="image" value="" placeholder="Enter a meal's image URL" class="input-text">
+                  <br>
+    
+                  <input type="text" name="kind" value="" placeholder="Enter the kind of meal" class="input-text">
+                  <br>
+    
+                  <label>description</label>
+                  <br>
+                <textarea type="text-area" name="description" value="" placeholder="Enter the instructions" class="input-text">
+                </textarea>
+                  <br>
+                  <input type="submit" name="submit" value="edit meal" class="submit">
+
+                  <button type="button" id="delete-button">delete</button>
+                  
+                </form>
+              </div>
+
+
+              <!-- <div class="container" id="form-container"> -->
+                <!-- FORM GOES HERE -->
+              <!-- </div> -->
+
+
+            </div>
+            <h5 class="card-header">Recipes</h5>
+            <ul class="list-group list-group-flush" id="recipes-list">
+              
+            </ul>
+
+            <div   class="container">
+              <form class="add-recipe-form" >
+                <h3>add a new recipe to this meal</h3>
+        
+                <input type="text" name="name" value="" placeholder="Enter a meal name" class="input-text">
+                <br>
+
+                <label style="text-align: center;">ingredients</label>
+                <br>
+                <textarea type="text-area" name="ingredients" value="" placeholder="Enter the ingredients" class="input-text">
+                </textarea>
+                <br>
+
+                <label style="text-align: center;">instructions</label>
+                <br>
+                <textarea type="text-area" name="instructions" value="" placeholder="Enter the instructions" class="input-text">
+                </textarea>
+                <br>
+
+                <input type="submit" name="submit" value="submit" class="submit">
+                
+              </form> 
+            
+              
+                       <!-- update receipe form below -->
+
+                       <!-- <form class="edit-recipe-form" >
+                        <h3>edit your recipe for this meal</h3>
+                
+                        <input type="text" name="name" value="" placeholder="Edit recipe name" class="input-text">
+                        <br>
+        
+                        <label style="text-align: center;">ingredients</label>
+                        <br>
+                        <textarea type="text-area" name="ingredients" value="" placeholder="Enter the ingredients" class="input-text">
+                        </textarea>
+                        <br>
+        
+                        <label style="text-align: center;">instructions</label>
+                        <br>
+                        <textarea type="text-area" name="instructions" value="" placeholder="Enter the instructions" class="input-text">
+                        </textarea>
+                        <br>
+        
+                        <input type="submit" name="submit" value="update" class="submit">
+                        
+                      </form> -->
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
