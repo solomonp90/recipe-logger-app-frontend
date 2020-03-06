@@ -5,7 +5,7 @@
     <title>meal app</title>
     <div style="text-align: left;"  class="create-meal-container container">
       <form class="add-meal-form" style="" id="add-meal-form">
-        <h3>Add a new Meal</h3>
+        <h3 style="color: white;">Add a new Meal</h3>
 
         <input type="text" name="name" value="" placeholder="Enter a meal name" class="input-text">
         <br>       
@@ -24,12 +24,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script defer src="index.js"></script>
   </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
+  <body style="background-color: firebrick;">
+    <!-- <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Welcome to Meal log!</h1>
       </div>
-    </div>
+    </div> -->
+    <br>
 
     <div class="container">
       <div class="row">
@@ -40,11 +41,11 @@
         </div>
 
         <div class="col-8" id="meal-card-container">
-          <div class="card mb-3" id="main-meal">
+          <div class="card mb-3" id="main-meal" >
 
-            <img class="card-img-top" id="meal-image" alt="meal Image Goes Here" src="https://prodimage.images-bn.com/pimages/9781724459091_p0_v1_s550x406.jpg">
+            <img style="" class="card-img-top"  id="meal-image" alt="meal Image Goes Here" src="https://spinepains.com/wp-content/uploads/2018/05/Farm-To-Table-Foods-That-Promote-Health.jpg">
             <div class="card-body" >
-              <h4 class="card-title" id="meal-name"></h4>
+              <h4 class="card-title" id="meal-name" style="text-align: center; color: rgb(226, 129, 25);">Flat-Iron recipe log</h4>
               <p class="card-text" id="meal-kind"></p>
               <p class="card-text" id="meal-description"></p>
               <div class="container" id="form-container">
